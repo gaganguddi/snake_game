@@ -1,0 +1,39 @@
+name: snake_game
+description: "A classic Snake Game built using Flutter. The game is played on a grid where the snake moves automatically, and the player controls its direction using swipe gestures or on-screen arrow buttons. The objective is to eat the red food blocks, which makes the snake grow longer and increases your score."
+
+# Prevent accidental publish to pub.dev
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1  # upgraded version
+
+flutter:
+  uses-material-design: true
+
+  # Add assets here if needed
+  # assets:
+  #   - assets/icon.png
+
+flutter_launcher_icons:
+  image_path: "assets/icon.png"   # main icon path
+  android: true
+  ios: true
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon.png"
